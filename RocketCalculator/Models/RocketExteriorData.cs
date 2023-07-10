@@ -31,6 +31,19 @@ namespace RocketCalculator.Models
             }
         }
         
+        float _rocketShellDensity;
+        public float RocketShellDensity
+        {
+            get => _rocketShellDensity;
+            set
+            {
+                if (_rocketShellDensity == value) return;
+                
+                _rocketShellDensity = value;
+                OnPropertyChanged();
+            }
+        }
+        
         float _rocketDiameter;
         public float RocketDiameter
         {

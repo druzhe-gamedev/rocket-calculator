@@ -8,12 +8,12 @@ namespace RocketCalculator.ViewModels
     public class BindedObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public event Action OnChangeProperty;
+        public event Action OnChangedAction;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            OnChangeProperty?.Invoke();
+            OnChangedAction?.Invoke();
         }
     }
 }

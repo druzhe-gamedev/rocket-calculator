@@ -19,5 +19,3 @@ E:\Programs\C# Programs\RocketCalculator\RocketCalculator\obj\Debug\GeneratedInt
 E:\Programs\C# Programs\RocketCalculator\RocketCalculator\obj\Debug\Views\Calculator.baml
 E:\Programs\C# Programs\RocketCalculator\RocketCalculator\obj\Debug\ElementStyles.baml
 E:\Programs\C# Programs\RocketCalculator\RocketCalculator\obj\Debug\App.baml
-E:\Programs\C# Programs\RocketCalculator\RocketCalculator\obj\Debug\Views\OutputData.g.cs
-E:\Programs\C# Programs\RocketCalculator\RocketCalculator\obj\Debug\Views\OutputData.baml

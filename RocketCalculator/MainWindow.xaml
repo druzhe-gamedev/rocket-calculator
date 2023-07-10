@@ -50,7 +50,6 @@
             </Grid.ColumnDefinitions>
             
             <calculator:Calculator HorizontalAlignment="Left"></calculator:Calculator>
-            <calculator:OutputData Grid.Column="1" HorizontalAlignment="Left" Margin="25 0 0 0"></calculator:OutputData>
         </Grid>
     </Grid>
 </Window>

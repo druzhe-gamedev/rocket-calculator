@@ -53,15 +53,14 @@
         </ApplicationDefinition>
         <Compile Include="Models\RocketEngineData.cs" />
         <Compile Include="Models\RocketExteriorData.cs" />
+        <Compile Include="Services\CalculationService.cs" />
+        <Compile Include="Services\IService.cs" />
         <Compile Include="ViewModels\CalculationsViewModel.cs" />
         <Compile Include="ViewModels\BindedObject.cs" />
         <Compile Include="Views\Calculator.xaml.cs">
           <DependentUpon>Calculator.xaml</DependentUpon>
         </Compile>
         <Compile Include="Views\Converter.cs" />
-        <Compile Include="Views\OutputData.xaml.cs">
-          <DependentUpon>OutputData.xaml</DependentUpon>
-        </Compile>
         <Page Include="ElementStyles.xaml" />
         <Page Include="MainWindow.xaml">
             <Generator>MSBuild:Compile</Generator>
@@ -76,7 +75,6 @@
             <SubType>Code</SubType>
         </Compile>
         <Page Include="Views\Calculator.xaml" />
-        <Page Include="Views\OutputData.xaml" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs">

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Windows;
-using System.Windows.Controls;
-using RocketCalculator.Models;
+﻿using System.Windows.Controls;
+using RocketCalculator.Services;
 using RocketCalculator.ViewModels;
 
 namespace RocketCalculator.Views
@@ -12,7 +10,10 @@ namespace RocketCalculator.Views
         {
             InitializeComponent();
 
-            DataContext = new CalculationsViewModel();
+            var calculationsViewModel = new CalculationsViewModel();
+            calculationsViewModel.SubscribeEvents();
+            
+            DataContext = calculationsViewModel;
         }
     }
 }

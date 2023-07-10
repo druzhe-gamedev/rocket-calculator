@@ -22,12 +22,6 @@
             <TextBlock FontSize="17px" Foreground="Azure" Margin="15 25 5 5">Rocket Calculator</TextBlock>
             
             <StackPanel Orientation="Horizontal" Margin="15 25 5 7" >
-                <TextBlock FontSize="15px" Foreground="Azure">Fuel Mass</TextBlock>
-                <TextBox Style="{DynamicResource InputStyle}"  Margin="15 0 0 0" 
-                         Text="{Binding RocketEngineData.FuelMass, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
-            </StackPanel>  
-            
-            <StackPanel Orientation="Horizontal" Margin="15 7 5 7" >
                 <TextBlock FontSize="15px" Foreground="Azure">Engine Height</TextBlock>
                 <TextBox Style="{DynamicResource InputStyle}"  Margin="15 0 0 0" 
                          Text="{Binding RocketEngineData.EngineHeight, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
@@ -37,12 +31,6 @@
                 <TextBlock FontSize="15px" Foreground="Azure">Fuel Density</TextBlock>
                 <TextBox Style="{DynamicResource InputStyle}"  Margin="15 0 0 0" 
                          Text="{Binding RocketEngineData.FuelDensity, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
-            </StackPanel> 
-            
-            <StackPanel Orientation="Horizontal" Margin="15 7 5 7" >
-                <TextBlock FontSize="15px" Foreground="Azure">Rocket Shell Density</TextBlock>
-                <TextBox Style="{DynamicResource InputStyle}"  Margin="15 0 0 0" 
-                         Text="{Binding RocketEngineData.RocketShellDensity, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
             </StackPanel> 
             
             <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
@@ -70,6 +58,12 @@
             </StackPanel>
             
             <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
+                <TextBlock FontSize="15px" Foreground="Azure">Rocket Shell Density</TextBlock>
+                <TextBox Style="{DynamicResource InputStyle}" Margin="15 0 0 0" 
+                         Text="{Binding RocketExteriorData.RocketShellDensity, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
                 <TextBlock FontSize="15px" Foreground="Azure">Rocket Outer Diameter</TextBlock>
                 <TextBox Style="{DynamicResource InputStyle}" Margin="15 0 0 0" 
                          Text="{Binding RocketExteriorData.RocketOuterDiameter, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
@@ -87,27 +81,32 @@
             
             <StackPanel Orientation="Horizontal" Margin="15 25 5 7">
                 <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure">Time of Fuel burning</TextBlock>
-                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure" />
+                <TextBlock Margin="0 0 5 0" FontSize="15px" 
+                           Foreground="Azure" />
             </StackPanel>
             
             <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
                 <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure">Time of Fuel burning</TextBlock>
-                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure" />
+                <TextBlock Margin="0 0 5 0" FontSize="15px" 
+                           Foreground="Azure" />
             </StackPanel>
             
             <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
                 <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure">Rocket Volume</TextBlock>
-                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure" Text="{Binding RocketVolume}" />
+                <TextBlock Margin="0 0 5 0" FontSize="15px" 
+                           Foreground="Azure" Text="{Binding CalculationService.RocketVolume}" />
             </StackPanel>
             
             <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
-                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure">Burning Time</TextBlock>
-                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure" Text="{Binding BurningTime}" />
+                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure">Time of fuel burning</TextBlock>
+                <TextBlock Margin="0 0 5 0" FontSize="15px" 
+                           Foreground="Azure" Text="{Binding CalculationService.BurningTime}" />
             </StackPanel>
             
             <StackPanel Orientation="Horizontal" Margin="15 7 5 7">
                 <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure">Rocket Maximal Speed</TextBlock>
-                <TextBlock Margin="0 0 5 0" FontSize="15px" Foreground="Azure" />
+                <TextBlock Margin="0 0 5 0" FontSize="15px" 
+                           Foreground="Azure" Text="{Binding CalculationService.RocketMaxSpeed}"  />
             </StackPanel>
         </WrapPanel>
     </Grid>
